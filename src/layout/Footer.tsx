@@ -7,19 +7,19 @@ const Footer = () => {
 		<footer className='footer'>
 			<div className='footer__icons'>
 				<img
-					src='/src/assets/fa-brands_facebook-square.svg'
+					src='src/assets/fa-brands_facebook-square.svg'
 					alt='Facebook Icon'
 				/>
 				<img
-					src='/src/assets/fa-brands_instagram.svg'
+					src='src/assets/fa-brands_instagram.svg'
 					alt='Instagram Icon'
 				/>
 				<img
-					src='/src/assets/fa-brands_twitter.svg'
+					src='src/assets/fa-brands_twitter.svg'
 					alt='Twitter Icon'
 				/>
 				<img
-					src='/src/assets/youtube.svg'
+					src='src/assets/youtube.svg'
 					alt='Youtube Icon'
 				/>
 			</div>

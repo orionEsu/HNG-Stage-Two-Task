@@ -1,15 +1,6 @@
 import './navbar.scss';
-// import useRes from '../../hooks/useSearchMovies';
-// import { useState } from 'react';
 
 const Navbar = () => {
-	// const [value, setValue] = useState('');
-
-	// const handleChange = (e) => {
-	// 	setValue((val) => e.target.value);
-	// 	const response = useRes(value);
-	// 	console.log(response);
-	// };
 
 	return (
 		<nav className='nav'>
@@ -19,7 +10,7 @@ const Navbar = () => {
 					className='nav__link'
 				>
 					<img
-						src='/src/assets/logo.svg'
+						src='src/assets/logo.svg'
 						alt='MovieBox Logo'
 						className='logo'
 					/>
@@ -42,7 +33,7 @@ const Navbar = () => {
 					Sign In
 				</a>
 				<img
-					src='/src/assets/Menu.svg'
+					src='src/assets/Menu.svg'
 					alt='Hamburger Menu'
 				/>
 			</div>

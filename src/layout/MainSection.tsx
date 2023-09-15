@@ -12,7 +12,7 @@ const MainSection = () => {
 				<div className='movies__header--more'>
 					<a href='#'>See More</a>
 					<img
-						src='/src/assets/chevron-right.svg'
+						src='src/assets/chevron-right.svg'
 						alt='Right arrow'
 					/>
 				</div>
