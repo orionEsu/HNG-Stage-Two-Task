@@ -1,0 +1,75 @@
+@use '/src/variable.scss' as *;
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 6rem;
+	padding-block: 2rem;
+	column-gap: 3rem;
+	row-gap: 1.5rem;
+
+	@media screen and (max-width: 900px) {
+		flex-direction: column;
+	}
+	@media screen and (max-width: 800px) {
+		padding-inline: 3rem;
+	}
+
+	&__flex {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 3rem;
+		row-gap: 1rem;
+		justify-content: space-between;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+
+		&--description {
+			font-size: 1.4rem;
+			color: $clr-white;
+			margin-left: 0.5rem;
+		}
+	}
+
+	&__search {
+		border: 1px solid $clr-stroke;
+		width: min(300px,  100%);
+		padding-block: 0.9rem;
+		padding-left: 0.8rem;
+		background-color: transparent;
+		border-radius: 6px;
+		color: $clr-white;
+		font-size: 1rem;
+		// flex: 1;
+
+		&::placeholder {
+			color: inherit;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__burger {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		width: 150px;
+
+		@media screen and (max-width: 900px) {
+			align-self: last baseline;
+		}
+	}
+}
+
+.sign-in {
+	color: $clr-white;
+	font-size: 1.2rem;
+}

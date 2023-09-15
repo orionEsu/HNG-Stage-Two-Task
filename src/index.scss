@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	font-size: 62.5%;
+	// font-family: 'Lora', serif;
+	font-family: 'DM Sans', sans-serif;
+	line-height: 1.6;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+#root {
+	display: grid;
+	grid-template-rows: 100vh repeat(8, min-content);
+	grid-template-columns:
+		[full-start] minmax(6rem, 1fr) repeat(
+			8,
+			[col-start] minmax(min-content, 14rem) [col-end]
+		)
+		minmax(6rem, 1fr) [full-end];
+
+	@media screen and (max-width: 800px) {
+		grid-template-columns:
+			[full-start] minmax(3rem, 1fr) repeat(
+				8,
+				[col-start] minmax(min-content, 14rem) [col-end]
+			)
+			minmax(3rem, 1fr) [full-end];
+	}
+}
+
+.header {
+	grid-row: 1/2;
+	grid-column: full-start/full-end;
+}
+
+.heading-1 {
+	// font-family: 'Bebas Neue', sans-serif;
+	// font-size: 4.5rem;
+	font-size: clamp(2rem, -0.7778rem + 8.8889vw, 4rem);
+	// font-size: clamp(2rem, -0.7778rem + 5.5556vw, 4rem);
+}
+
+a {
+	text-decoration: none;
+}

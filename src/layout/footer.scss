@@ -1,0 +1,41 @@
+@use '../variable.scss' as *;
+
+.footer {
+	grid-column: 2/10;
+	grid-row: 3/4;
+	margin-top: 4.5rem;
+	display: grid;
+	justify-content: center;
+	padding-bottom: 3rem;
+
+	&__icons {
+		display: flex;
+		column-gap: 2.5rem;
+		row-gap: .7rem;
+		flex-wrap: wrap;
+        justify-content: center;
+	}
+
+	&__links {
+		margin-top: 2rem;
+		display: flex;
+		column-gap: 2rem;
+		row-gap: .7rem;
+		flex-wrap: wrap;
+		color: #404040;
+
+		& > * {
+			font-size: 1.1rem;
+			font-family: 'DM Sans', sans-serif;
+			color: $clr-gray-500;
+		}
+	}
+
+	&__credits{
+		color: $clr-gray-500;
+		font-weight: 600;
+		font-size: 1rem;
+		margin-top: 2rem;
+		text-align: center;
+	}
+}

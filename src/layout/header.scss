@@ -1,0 +1,75 @@
+@use '../variable.scss' as *;
+
+.header {
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	isolation: isolate;
+	color: $clr-white;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		inset: 0;
+		background-color: rgba($color: $clr-black, $alpha: 0.6);
+	}
+
+	&__description {
+		display: grid;
+		margin: auto;
+		padding-top: 4rem;
+		padding-left: 6rem;
+
+		@media screen and (max-width: 800px) {
+			padding-inline: 3rem;
+		}
+
+		&--header {
+			width: 15ch;
+			line-height: 1;
+		}
+
+		&--ratings {
+			display: flex;
+			gap: 1rem;
+			margin-top: 1rem;
+		}
+
+		&--text {
+			font-size: clamp(1rem, 0.8611rem + 0.4444vw, 1.1rem);
+			width: min(70%, 50ch);
+			margin-top: 1rem;
+		}
+
+		&--btn {
+			background-color: $clr-primary;
+			color: $clr-white;
+			width: 170px;
+			display: flex;
+			align-items: center;
+			text-transform: uppercase;
+			font-family: 'DM Sans', sans-serif;
+			padding-block: 0.7rem;
+			border: none;
+			border-radius: 6px;
+			justify-content: center;
+			gap: 0.5rem;
+			font-size: 0.9rem;
+			font-weight: bold;
+			box-shadow: 3px 3px 5px rgba($color: $clr-black, $alpha: 0.6);
+			margin-top: 1rem;
+			cursor: pointer;
+		}
+	}
+}
+
+.ratings {
+	display: flex;
+	align-items: center;
+	column-gap: 0.3rem;
+
+	&__text {
+		font-size: 1.1rem;
+	}
+}
